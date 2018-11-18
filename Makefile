@@ -1,6 +1,6 @@
 
 HW  ?= qarm
-APP ?= hello
+APP ?= belka
 
 include hw/$(HW).mk
 include cpu/$(CPU).mk
