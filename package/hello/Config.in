@@ -1,0 +1,19 @@
+config BR2_PACKAGE_HELLO
+	bool "Hello World"
+	default y
+	help
+		test Buildroot system for libs and functions
+
+if BR2_PACKAGE_HELLO
+
+config BR2_PACKAGE_HELLO_CPP
+	bool "c++"
+	default n
+	select BR2_TOOLCHAIN_BUILDROOT_CXX
+
+config BR2_PACKAGE_HELLO_PTHREAD
+	bool "pthread"
+	default n
+	depends on BR2_PTHREADS_NATIVE
+
+endif
