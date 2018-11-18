@@ -1,1 +1,1 @@
-CPU = arm9
+CPU = arm926t
