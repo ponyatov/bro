@@ -16,6 +16,14 @@ GZ		= $(HOME)/gz
 
 WGET	= wget -c
 
+NUM_CPUS ?= $(shell grep processor /proc/cpuinfo|wc -l)
+MAX_CPUS ?= 4
+ifeq ($(shell expr $(NUM_CPUS) \> $(MAX_CPUS)), 1)
+NUM_CPUS = $(MAX_CPUS)
+endif
+ 
+MAKEJ	= make -j$(NUM_CPUS)
+
 all: buildroot
 
 buildroot: buildroot/README
@@ -27,7 +35,7 @@ buildroot: buildroot/README
 		../app/$(APP).buildroot \
 	>> .config && \
 	echo "BR2_TARGET_GENERIC_HOSTNAME=\"$(HW)$(APP)\"" >> .config ;\
-	$(MAKE) menuconfig && $(MAKE)
+	$(MAKE) menuconfig && $(MAKEJ)
 	
 BUILDROOT_GIT = https://github.com/buildroot/buildroot.git
 	
