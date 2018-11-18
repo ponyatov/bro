@@ -27,7 +27,7 @@ buildroot: buildroot/README
 		../app/$(APP).buildroot \
 	>> .config && \
 	echo "BR2_TARGET_GENERIC_HOSTNAME=\"$(HW)$(APP)\"" >> .config ;\
-	$(MAKE) menuconfig
+	$(MAKE) menuconfig && $(MAKE)
 	
 BUILDROOT_GIT = https://github.com/buildroot/buildroot.git
 	
