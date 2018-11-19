@@ -52,9 +52,10 @@ buildroot/README:
 KERNEL = buildroot/output/images/zImage
 INITRD = buildroot/output/images/rootfs.cpio.gz
 emu: $(KERNEL) $(INITRD)
-	$(QEMU) -serial mon:stdio \
-		-kernel $(KERNEL) -initrd $(INITRD) -append $(QEMU_CMDLINE)
-
+	$(QEMU) \
+		-kernel $(KERNEL) -initrd $(INITRD)
+#-append $(QEMU_CMDLINE)
+#-serial mon:stdio 
 		
 doxy:
 	rm -rf docs ; doxygen doxy.gen 1>/dev/null
