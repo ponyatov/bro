@@ -10,6 +10,8 @@ menu "Target packages"
 	
 comment "BuildRoot Overlay"
 	source "package/hello/Config.in"
+	source "package/gui/Config.in"
+	source "package/flask/Config.in"
 
 	source "package/belka/Config.in"
 
