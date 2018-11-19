@@ -41,7 +41,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542610732384</id>
+			<id>1542616222639</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
@@ -50,12 +50,30 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542610732390</id>
+			<id>1542616222642</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-name-matches-false-false-hello</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1542616222662</id>
+			<name>buildroot/package</name>
+			<type>13</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-gui</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1542616222669</id>
+			<name>buildroot/package</name>
+			<type>13</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-flask</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

@@ -1,6 +1,6 @@
 
 HW  ?= qarm
-APP ?= belka
+APP ?= kiosk
 
 include hw/$(HW).mk
 include cpu/$(CPU).mk

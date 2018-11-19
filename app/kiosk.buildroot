@@ -1,0 +1,3 @@
+BR2_PACKAGE_HELLO=y
+BR2_TARGET_GENERIC_ISSUE="kiosk Linux (c) Dmitry Ponyatov <dponyatov@gmail.com> All rights reserved"
+BR2_PACKAGE_GUI=y
