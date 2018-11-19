@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bro',['bro',['../index.html',1,'']]]
+  ['app_2fkiosk',['app/kiosk',['../kiosk.html',1,'']]]
 ];
