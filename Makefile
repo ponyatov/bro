@@ -54,3 +54,7 @@ INITRD = buildroot/output/images/rootfs.cpio.gz
 emu: $(KERNEL) $(INITRD)
 	$(QEMU) -serial mon:stdio \
 		-kernel $(KERNEL) -initrd $(INITRD) -append $(QEMU_CMDLINE)
+
+		
+doxy:
+	rm -rf docs ; doxygen doxy.gen 1>/dev/null
