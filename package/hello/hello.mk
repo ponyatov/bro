@@ -20,7 +20,7 @@ define HELLO_INSTALL_TARGET_CMDS
 	cd $(@D) ; $(TARGET_CONFIGURE_OPTS) $(MAKE) PREFIX=$(TARGET_DIR)/usr install
 endef
 
-define ITCS_PERMISSIONS
+define HELLO_PERMISSIONS
 	/usr/bin/hello*						f	0500	0	0	-	-	-	-	-
 endef
 

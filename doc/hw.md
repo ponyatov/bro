@@ -10,7 +10,7 @@
 
 ## MIPS
 
-* QEMU-system-arm
+* QEMU-system-mips
 * @ref hilink
   * @ref hlkrm04
   * @ref hlk7688

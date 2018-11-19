@@ -1,0 +1,5 @@
+config BR2_PACKAGE_FLASK
+	bool "Flask web platform server"
+	default n
+	help
+		Flask web platform server
