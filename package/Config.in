@@ -13,8 +13,6 @@ comment "BuildRoot Overlay"
 	source "package/gui/Config.in"
 	source "package/flask/Config.in"
 
-	source "package/belka/Config.in"
-
 if BR2_i386
 	menu "mining"
 	endmenu

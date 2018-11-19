@@ -50,15 +50,12 @@ buildroot/README:
 	ln -fs ../../package/hello buildroot/package/hello
 	ln -fs ../../package/gui   buildroot/package/gui
 	ln -fs ../../package/flask buildroot/package/flask
-	ln -fs ../../package/belka buildroot/package/belka
 
 KERNEL = buildroot/output/images/zImage
 INITRD = buildroot/output/images/rootfs.cpio.gz
 emu: $(KERNEL) $(INITRD)
-	$(QEMU) \
-		-kernel $(KERNEL) -initrd $(INITRD)
-#-append $(QEMU_CMDLINE)
-#-serial mon:stdio 
+	$(QEMU) -serial mon:stdio \
+		-kernel $(KERNEL) -initrd $(INITRD) -append $(QEMU_CMDLINE)
 		
 doxy:
 	rm -rf docs ; doxygen doxy.gen 1>/dev/null
