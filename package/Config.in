@@ -11,6 +11,8 @@ menu "Target packages"
 comment "BuildRoot Overlay"
 	source "package/hello/Config.in"
 
+	source "package/belka/Config.in"
+
 if BR2_i386
 	menu "mining"
 	endmenu

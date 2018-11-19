@@ -1,0 +1,16 @@
+config BR2_PACKAGE_BELKA
+	bool "Belka Vending platform"
+	default y
+	select BR2_TOOLCHAIN_BUILDROOT_WCHAR
+	help
+		test Buildroot system for libs and functions
+
+if BR2_PACKAGE_BELKA
+
+config BR2_PACKAGE_BELKA_X
+	bool "XWindow system"
+	default y
+	select BR2_PACKAGE_XORG7
+	select BR2_PACKAGE_XSERVER_XORG_SERVER 
+
+endif

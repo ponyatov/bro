@@ -48,6 +48,7 @@ buildroot/README:
 	git clone -b $(BUILDROOT_VER) --depth=1 $(BUILDROOT_GIT) buildroot
 	ln -fs ../../package/Config.in buildroot/package/Config.in
 	ln -fs ../../package/hello buildroot/package/hello
+	ln -fs ../../package/belka buildroot/package/belka
 
 KERNEL = buildroot/output/images/zImage
 INITRD = buildroot/output/images/rootfs.cpio.gz
