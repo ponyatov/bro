@@ -1,5 +1,5 @@
 config BR2_PACKAGE_PYTHON_FLASK_WTF
-	bool "python-flask_wtf"
+	bool "python-flask-wtf"
 	depends on BR2_PACKAGE_PYTHON_FLASK
 	help
 		WTForms interface for Flask

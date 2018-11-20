@@ -1,5 +1,4 @@
 config BR2_PACKAGE_PYTHON_WTFORMS
 	bool "python-wtforms"
-	depends on BR2_PACKAGE_PYTHON_FLASK
 	help
 		WTForms interface
