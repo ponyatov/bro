@@ -19,5 +19,5 @@ label[for=error]	{ color:yellow; }
 
 #slider > * {
 	border: solid 1px; border-color: darkgreen;
-	display: inline-block; overflow: scroll; max-height: 100%;
+	display: inline-block; /* overflow: scroll; */ max-height: 100%;
 }
