@@ -51,6 +51,8 @@ buildroot/README:
 	ln -fs ../../package/kiosk buildroot/package/kiosk
 	ln -fs ../../package/gui   buildroot/package/gui
 	ln -fs ../../package/flask buildroot/package/flask
+	ln -fs ../../package/python-flask_wtf buildroot/package/python-flask_wtf
+	ln -fs ../../package/python-wtforms buildroot/package/python-wtforms
 
 KERNEL = buildroot/output/images/zImage
 INITRD = buildroot/output/images/rootfs.cpio.gz

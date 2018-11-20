@@ -47,7 +47,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542616222639</id>
+			<id>1542714668850</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
@@ -56,7 +56,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542616222642</id>
+			<id>1542714668855</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
@@ -65,7 +65,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542616222662</id>
+			<id>1542714668858</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
@@ -74,12 +74,21 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1542616222669</id>
+			<id>1542714668862</id>
 			<name>buildroot/package</name>
 			<type>13</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-name-matches-false-false-flask</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1542714668910</id>
+			<name>buildroot/package</name>
+			<type>13</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-python-flask</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>
