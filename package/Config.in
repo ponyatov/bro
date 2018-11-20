@@ -11,8 +11,7 @@ menu "Target packages"
 comment "BuildRoot Overlay"
 	source "package/hello/Config.in"
 
-config BR2_PACKAGE_KIOSK
-	bool "Kiosk"
+source "package/kiosk/Config.in"
 	
 if BR2_PACKAGE_KIOSK
 	source "package/gui/Config.in"

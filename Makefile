@@ -48,6 +48,7 @@ buildroot/README:
 	git clone -b $(BUILDROOT_VER) --depth=1 $(BUILDROOT_GIT) buildroot
 	ln -fs ../../package/Config.in buildroot/package/Config.in
 	ln -fs ../../package/hello buildroot/package/hello
+	ln -fs ../../package/kiosk buildroot/package/kiosk
 	ln -fs ../../package/gui   buildroot/package/gui
 	ln -fs ../../package/flask buildroot/package/flask
 
