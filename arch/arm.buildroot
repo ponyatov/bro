@@ -1,1 +1,2 @@
 BR2_arm=y
+BR2_SYSTEM_DHCP="eth0"

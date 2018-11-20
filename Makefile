@@ -57,8 +57,9 @@ buildroot/README:
 KERNEL = buildroot/output/images/zImage
 INITRD = buildroot/output/images/rootfs.cpio.gz
 emu: $(KERNEL) $(INITRD)
-	$(QEMU) -serial mon:stdio -net nic -net user -localtime \
-		-kernel $(KERNEL) -initrd $(INITRD) -append $(QEMU_CMDLINE)
+	$(QEMU) -serial mon:stdio -localtime \
+		-net nic,macaddr=22:33:99:44:55:66 -net user \
+			-kernel $(KERNEL) -initrd $(INITRD) -append $(QEMU_CMDLINE)
 		
 doxy:
 	rm -rf docs ; doxygen doxy.gen 1>/dev/null
