@@ -1,6 +1,7 @@
 config BR2_PACKAGE_KIOSK
 	bool "Kiosk"
-	select BR2_PACKAGE_GUI
-	select BR2_PACKAGE_PYTHON
+#	select BR2_PACKAGE_GUI
 	select BR2_PACKAGE_FLASK
+	help
+		generic internet kiosk / POS terminal
 	

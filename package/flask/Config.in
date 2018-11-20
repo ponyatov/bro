@@ -1,6 +1,7 @@
 config BR2_PACKAGE_FLASK
 	bool "Flask web platform server"
 	default n
+	select BR2_TOOLCHAIN_BUILDROOT_WCHAR
 	select BR2_PACKAGE_PYTHON
 	select BR2_PACKAGE_PYTHON_FLASK
 	help

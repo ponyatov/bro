@@ -1,6 +1,6 @@
 config BR2_PACKAGE_GUI
 	bool "X Window system GUI"
-	default y
+	default n
 	select BR2_TOOLCHAIN_BUILDROOT_WCHAR
 	select BR2_PACKAGE_XORG7
 	select BR2_PACKAGE_XSERVER_XORG_SERVER
